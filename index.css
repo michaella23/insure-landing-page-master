@@ -1,0 +1,158 @@
+
+:root {
+    /* text colors
+    
+    */
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --grayish-violet: hsl(273, 4%, 51%);
+    --light-gray: hsl(0, 0%, 98%);
+    /* font-families 
+    font-family: 
+    font-family: 'DM Serif Display', serif;
+    */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ========= main elements ========== */
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body > * {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    height: 3em;
+}
+
+.nav-menu {
+    display: none;
+    position: fixed;
+}
+
+.overlay {
+    margin-top: 0;
+    background-color: var(--very-dark-violet);
+    background-image: url("images/bg-patterns/bg-pattern-mobile-nav.svg");
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+
+.top-nav-list {
+    padding: 0;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hero-text, main, footer {
+    padding: 1.5em;
+}
+
+.mobile-img {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    margin-bottom: -.5em;
+}
+
+.hero-text {
+    height: 80vh;
+    margin: 0;
+    background-color: var(--dark-violet);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-we-work {
+    background-color: var(--dark-violet);
+    color: white;
+    padding: 3em 1em;
+}
+
+.work-btn, .plan-btn {
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 1em 2em;
+    letter-spacing: .15rem;
+}
+
+.social-icons {
+    margin-top: 1.5em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon {
+    padding: .5em;
+}
+
+
+
+footer {
+    margin-bottom: 4em;
+}
+
+/* ======== typography ======== */
+
+h1, h2 {
+    font-family: 'DM Serif Display', serif;
+   
+}
+
+h1 {
+    font-size: 3em;
+    
+}
+
+
+.menu-head {
+    color: var(--grayish-violet);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+
+.menu {
+    color: var(--very-dark-violet);
+    line-height: 2em;
+    text-transform: uppercase;
+
+}
